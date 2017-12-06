@@ -31,21 +31,25 @@ pp. 3473 -3476, September, 2010, Hong Kong.
 If you are only using ExHoG in your work, kindly cite [1] - [4] in your publications.
 
 IMPORTANT NOTE
+
 The code below is provided as it is. 
 
 If you find some bugs, please inform me and I will fix them. 
 
 WINDOWS SUPPORT
+
 This code will NOT work in Windows. It is meant for Linux-based systems.
  
 
 SVM LEARN FILES
+
 This code does not build svm_learn binary. For that download
 
 http://pascal.inrialpes.fr/soft/olt/svmdense.tar.gz
 and build a svm_learn binary.
 
 GENERAL INFORMATION
+
 This code implements a multiscale ExHoG detector for visual object
 recognition and notably for human detection using linear SVM. It requires three 
 external libraries:
@@ -63,6 +67,7 @@ corresponding header file. A license file is included in the
 distribution.
 
 INSTALLATION
+
 First install the development versions (*-devel RPM's or similar) of
 the three external libraries as follows, making sure that the headers
 and libraries are in your standard search paths :
