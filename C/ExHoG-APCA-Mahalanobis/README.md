@@ -1,5 +1,7 @@
 Author: Amit Satpathy (amit00001@gmail.com)
 
+Note that this code is only for academic use. Please contact the author, Nanyang Technological University or Agency for Science, Technology and Research for commercial use.
+
 Thanks to Navneet Dalal for providing the original source files for HOG. Those 
 files have been modified for ExHoG implementation. His original source files can
 be downloaded from http://pascal.inrialpes.fr/soft/olt/learcode.zip.
