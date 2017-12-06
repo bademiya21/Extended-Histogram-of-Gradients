@@ -32,8 +32,8 @@ you are using ExHoG + APCA in your work, kindly cite [1] and [3].
 
 IMPORTANT NOTE
 
-The code is provided as it is. Inside, Piotr Dollar's modified toolbox which contains 
-ExHoG generation functions are provided. This version is modified from Version 3.01. As 
+The code is provided as it is. Piotr Dollar's modified toolbox which contains 
+ExHoG generation functions are provided (zip file). This version is modified from Version 3.01. As 
 of writing this txt, the current version of Dollar's toolbox is 3.24. If time permits, I
 will update the modified toolbox to the latest version of Piotr's Toolbox.
 
