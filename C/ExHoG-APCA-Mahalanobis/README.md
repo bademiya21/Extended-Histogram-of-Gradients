@@ -4,20 +4,43 @@ Thanks to Navneet Dalal for providing the original source files for HOG. Those
 files have been modified for ExHoG implementation. His original source files can
 be downloaded from http://pascal.inrialpes.fr/soft/olt/learcode.zip.
 
-=== IMPORTANT NOTE ============================================================
+The following scientific publications contain the original descriptions of the 
+method implemented in this Software:
+
+[1] Amit Satpathy, Xudong Jiang and How-Lung Eng, “Human Detection by Quadratic 
+Classification on Subspace of Extended Histogram of Gradients”, IEEE Transactions on Image
+Processing, vol.23, no.1, pp.287-297, Jan, 2014.
+
+[2] Amit Satpathy, Xudong Jiang and How-Lung Eng, “Visual Object Detection by Parts-based 
+Modeling Using Extended Histogram of Gradients”, Proc. of the 2010 IEEE Int. Conf. on Image 
+Processing. (ICIP’2013), September, 2013, Melbourne, Australia.
+
+[3] Amit Satpathy, Xudong Jiang and How-Lung Eng, “Extended Histogram of Gradients with 
+Asymmetric Principal Component and Discriminant Analyses for Human Detection”, Proc. of 
+the IEEE Canadian Conf. on Computer and Robot Vision (CRV’2011), pp. 64-71, May, 2011, 
+St. John’s, Canada.
+
+[4] Amit Satpathy, Xudong Jiang and How-Lung Eng, “Extended Histogram of Gradients Feature 
+for Human Detection”, Proc. of the 2010 IEEE Int. Conf. on Image Processing. (ICIP’2010),
+pp. 3473 -3476, September, 2010, Hong Kong.
+
+If you are only using ExHoG in your work, kindly cite [1] - [4] in your publications. If using
+ExHoG + APCA, please cite [1] and [3].
+
+IMPORTANT NOTE
+
 The code below is provided as it is. 
 
 If you find some bugs, please inform me and I will fix them. 
 
-=== WINDOWS SUPPORT ==========================================================
+WINDOWS SUPPORT
+
 This code will NOT work in Windows. It is meant for Linux-based systems.
  
-
-=== GENERAL INFORMATION =======================================================
+GENERAL INFORMATION
 
 This code implements a multiscale ExHoG detector for visual object
-recognition and notably for human detection using linear SVM. It requires 4 
-external libraries:
+recognition and notably for human detection using Asymmetric Principal Component Analysis (APCA) + Mahalanobis Distance Classifier. It requires 4 external libraries:
 
 -- Imlib2       for reading/writing images
 -- Blitz        for efficient array processing
@@ -32,7 +55,7 @@ license. Where ever Vigra code has been used, this is mentioned in the
 corresponding header file. A license file is included in the
 distribution.
 
-=== INSTALLATION ==============================================================
+INSTALLATION
 
 First install the development versions (*-devel RPM's or similar) of
 the three external libraries as follows, making sure that the headers
@@ -58,28 +81,3 @@ http://pascal.inrialpes.fr/soft/olt/OLTbinaries.zip) for training and testing
 
 A demo script file, runall_INRIA_ExHoG_apca_fppi.sh, using INRIA data set as an example 
 has been provided. This code provide results for per-image methodology.
-
-=== PUBLICATIONS/CITATIONS=============================================================
-
-The following scientific publications contain the original descriptions of the 
-method implemented in this Software:
-
-[1] Amit Satpathy, Xudong Jiang and How-Lung Eng, “Human Detection by Quadratic 
-Classification on Subspace of Extended Histogram of Gradients”, IEEE Transactions on Image
-Processing, vol.23, no.1, pp.287-297, Jan, 2014.
-
-[2] Amit Satpathy, Xudong Jiang and How-Lung Eng, “Visual Object Detection by Parts-based 
-Modeling Using Extended Histogram of Gradients”, Proc. of the 2010 IEEE Int. Conf. on Image 
-Processing. (ICIP’2013), September, 2013, Melbourne, Australia.
-
-[3] Amit Satpathy, Xudong Jiang and How-Lung Eng, “Extended Histogram of Gradients with 
-Asymmetric Principal Component and Discriminant Analyses for Human Detection”, Proc. of 
-the IEEE Canadian Conf. on Computer and Robot Vision (CRV’2011), pp. 64-71, May, 2011, 
-St. John’s, Canada.
-
-[4] Amit Satpathy, Xudong Jiang and How-Lung Eng, “Extended Histogram of Gradients Feature 
-for Human Detection”, Proc. of the 2010 IEEE Int. Conf. on Image Processing. (ICIP’2010),
-pp. 3473 -3476, September, 2010, Hong Kong.
-
-If you are only using ExHoG in your work, kindly cite [1] - [4] in your publications. If using
-ExHoG + APCA, please cite [1] and [3].
