@@ -68,7 +68,7 @@ and libraries are in your standard search paths :
 	Blitz   - version 0.9 tested (installed from source as no RPM's are currently available)
 	OpenCV  - version 2.2.0 tested (newer versions NOT tested - no guarantee these codes will work with versions after 2.2.0)
 
-Then unpack the learcode.tar.gz file, change to it top level directory
+Then unzip the ExHoG-APCA-Malanobis.zip, change to it top level directory
 and run ./configure. If the libraries were installed in nonstandard
 places you can tell configure where to find them using, e.g.
 
@@ -76,6 +76,7 @@ places you can tell configure where to find them using, e.g.
   
 To compile the code run "sudo make" in the shell. Transfer the following binaries
 into the bin folder of OLTbinaries (downloadable from http://pascal.inrialpes.fr/soft/olt/OLTbinaries.zip) for training and testing 
+	
 	classify_rhog
 	dump_rhog
 	dump4svmlearn 
