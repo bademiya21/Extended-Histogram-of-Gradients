@@ -10,27 +10,28 @@ use.
 
 Codes are based on the following papers:
 
-[1] Amit Satpathy, Xudong Jiang and How-Lung Eng, ìHuman Detection by Quadratic 
-Classification on Subspace of Extended Histogram of Gradientsî, IEEE Transactions on Image
+[1] Amit Satpathy, Xudong Jiang and How-Lung Eng, ‚ÄúHuman Detection by Quadratic 
+Classification on Subspace of Extended Histogram of Gradients‚Äù, IEEE Transactions on Image
 Processing, vol.23, no.1, pp.287-297, Jan, 2014.
 
-[2] Amit Satpathy, Xudong Jiang and How-Lung Eng, ìVisual Object Detection by Parts-based 
-Modeling Using Extended Histogram of Gradientsî, Proc. of the 2010 IEEE Int. Conf. on Image 
-Processing. (ICIPí2013), September, 2013, Melbourne, Australia.
+[2] Amit Satpathy, Xudong Jiang and How-Lung Eng, ‚ÄúVisual Object Detection by Parts-based 
+Modeling Using Extended Histogram of Gradients‚Äù, Proc. of the 2010 IEEE Int. Conf. on Image 
+Processing. (ICIP‚Äô2013), September, 2013, Melbourne, Australia.
 
-[3] Amit Satpathy, Xudong Jiang and How-Lung Eng, ìExtended Histogram of Gradients with 
-Asymmetric Principal Component and Discriminant Analyses for Human Detectionî, Proc. of 
-the IEEE Canadian Conf. on Computer and Robot Vision (CRVí2011), pp. 64-71, May, 2011, 
-St. Johnís, Canada.
+[3] Amit Satpathy, Xudong Jiang and How-Lung Eng, ‚ÄúExtended Histogram of Gradients with 
+Asymmetric Principal Component and Discriminant Analyses for Human Detection‚Äù, Proc. of 
+the IEEE Canadian Conf. on Computer and Robot Vision (CRV‚Äô2011), pp. 64-71, May, 2011, 
+St. John‚Äôs, Canada.
 
-[4] Amit Satpathy, Xudong Jiang and How-Lung Eng, ìExtended Histogram of Gradients Feature 
-for Human Detectionî, Proc. of the 2010 IEEE Int. Conf. on Image Processing. (ICIPí2010),
+[4] Amit Satpathy, Xudong Jiang and How-Lung Eng, ‚ÄúExtended Histogram of Gradients Feature 
+for Human Detection‚Äù, Proc. of the 2010 IEEE Int. Conf. on Image Processing. (ICIP‚Äô2010),
 pp. 3473 -3476, September, 2010, Hong Kong.
 
 If you are only using ExHoG in your work, kindly cite [1] - [4] in your publications. If 
 you are using ExHoG + APCA in your work, kindly cite [1] and [3].
 
-===IMPORTANT NOTE========================================================================
+IMPORTANT NOTE
+
 The code is provided as it is. Inside, Piotr Dollar's modified toolbox which contains 
 ExHoG generation functions are provided. This version is modified from Version 3.01. As 
 of writing this txt, the current version of Dollar's toolbox is 3.24. If time permits, I
@@ -40,7 +41,7 @@ If you find any bugs, please inform me and I will fix them.
 
 The codes work fine for Windows-based MATLAB. It has NOT been tested for Linux systems.
 
-===INSTALLATION==========================================================================
+INSTALLATION
 
 First, you will need to install the modified Piotr's MATLAB Toolbox. To do so, just do the 
 following:
@@ -54,11 +55,11 @@ following:
 Please install a C++ compiler (preferably Visual Studio) to compile the mex files for 
 use.
  
-===USAGE==================================================================================
+USAGE
  
 Please refer to the MATLAB script file, demo.m to view the procedures.
  
-====EXCEPTIONS============================================================================
+EXCEPTIONS
  
 This code only contains the ExHoG extraction. The APCA procedure described in [1] and [3]can
 be easily implemented in MATLAB using existing MATLAB functions and hence, support is not
