@@ -42,10 +42,7 @@ This code will NOT work in Windows. It is meant for Linux-based systems.
 
 SVM LEARN FILES
 
-This code does not build svm_learn binary. For that download
-
-http://pascal.inrialpes.fr/soft/olt/svmdense.tar.gz
-and build a svm_learn binary.
+This code does not build svm_learn binary. For that download http://pascal.inrialpes.fr/soft/olt/svmdense.tar.gz and build a svm_learn binary.
 
 GENERAL INFORMATION
 
