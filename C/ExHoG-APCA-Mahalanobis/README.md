@@ -44,10 +44,10 @@ GENERAL INFORMATION
 This code implements a multiscale ExHoG detector for visual object
 recognition and notably for human detection using Asymmetric Principal Component Analysis (APCA) + Mahalanobis Distance Classifier. It requires 4 external libraries:
 
--- Imlib2       for reading/writing images
--- Blitz        for efficient array processing
--- Boost        for many other general c++ utilities not present in ISO C++
--- OpenCV       for APCA computations
+	Imlib2 for reading/writing images
+	Blitz for efficient array processing
+	Boost for many other general c++ utilities not present in ISO C++
+	OpenCV for APCA computations
 
 Some portions of the code (notably the color conversion routines)
 contain sources adapted from the Vigra Image Processing library
@@ -63,12 +63,10 @@ First install the development versions (*-devel RPM's or similar) of
 the three external libraries as follows, making sure that the headers
 and libraries are in your standard search paths :
 
-Imlib2  - version 1.2.2 tested
-Boost   - version 1.33.1 or later
-Blitz   - version 0.9 tested (installed from source as no RPM's are
-          currently available)
-OpenCV  - version 2.2.0 tested (newer versions NOT tested - no guarantee these codes
-		  will work with versions after 2.2.0)
+	Imlib2  - version 1.2.2 tested
+	Boost   - version 1.33.1 or later
+	Blitz   - version 0.9 tested (installed from source as no RPM's are currently available)
+	OpenCV  - version 2.2.0 tested (newer versions NOT tested - no guarantee these codes will work with versions after 2.2.0)
 
 Then unpack the learcode.tar.gz file, change to it top level directory
 and run ./configure. If the libraries were installed in nonstandard
@@ -77,9 +75,10 @@ places you can tell configure where to find them using, e.g.
   ./configure --with-blitz=/usr/local --with-boost=/usr/local ...
   
 To compile the code run "sudo make" in the shell. Transfer the following binaries
-into the bin folder of OLTbinaries (downloadable from 
-http://pascal.inrialpes.fr/soft/olt/OLTbinaries.zip) for training and testing 
-- classify_rhog, dump_rhog and dump4svmlearn. 
+into the bin folder of OLTbinaries (downloadable from http://pascal.inrialpes.fr/soft/olt/OLTbinaries.zip) for training and testing 
+	classify_rhog
+	dump_rhog
+	dump4svmlearn 
 
 A demo script file, runall_INRIA_ExHoG_apca_fppi.sh, using INRIA data set as an example 
 has been provided. This code provide results for per-image methodology.
